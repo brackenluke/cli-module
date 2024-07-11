@@ -3,6 +3,9 @@
 ## Description
 This application is used for creating and storing employee names. It can serve as a good way to keep and maintain your employee roster.
 
+## Credits
+Some of the code I used is from another project. The project I used for an example is the Module 12 Mini-Project: Movie Database application found on the UTSA gitlab.
+
 ## User Story
 AS A business owner
 I WANT to be able to view and manage the departments, roles, and employees in my company
