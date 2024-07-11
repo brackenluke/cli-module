@@ -84,7 +84,7 @@ app.delete('/api/names/:id', (req, res) => {
 
 // Read list of all reviews and associated name using LEFT JOIN
 app.get('/api/employee_name', (req, res) => {
-  const sql = `SELECT names.employee_name AS name, reviews.review FROM department LEFT JOIN names ON department.employee_id = employee.id ORDER BY employee.employee_name;`;
+  const sql = `SELECT names.employee_name AS name, department.department FROM department LEFT JOIN names ON department.employee_id = employee.id ORDER BY employee.employee_name;`;
   pool.query(sql, (err, { rows }) => {
     if (err) {
       res.status(500).json({ error: err.message });
